@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    width: auto; /* Change the width to auto to expand with content */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Adjust the horizontal margin as needed for centering */
+    text-align: center; /* Center the content inside the container */
+    display: flex; /* Use flexbox for the layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally within the container */
+}
+table {
+    width: 100%; /* Make the table fill the available width */
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+.submit-btn-container {
+    margin-top: 20px; /* Add some space between the form and the submit button */
+}
+td {
+    text-align: left; /* Align the contents of th and td to the left */
+}
+.submit-btn-container input[type="submit"] {
+    width: 150px; /* Set a fixed width for the submit button if desired */
+    margin: 0 auto; /* Center the submit button using margin auto */
+    display: block;
+}
+@media (max-width: 600px) {
+    /* Adjust styles for smaller screens (e.g., mobile devices) */
+    .container {
+        width: 100%;
+        margin: 0; /* Remove horizontal margin for full width */
+    }
+
+    .container table {
+        width: 100%; /* Make the table fill the available width on mobile */
+    }
+
+    .submit-btn-container {
+        margin-top: 10px; /* Reduce space between table and submit button on mobile */
+    }
+}
