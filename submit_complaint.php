@@ -19,7 +19,7 @@ function handleFileUpload($fieldName){
         $fileName = $_FILES[$fieldName]['name'];
         $fileType = $_FILES[$fieldName]['type'];
 
-        // Choose the destination folder based on the file type
+        // folder based on the file type
         $destinationFolder = '';
         if (strpos($fileType, 'image/') === 0) {
             $destinationFolder = 'uploads/images/';
@@ -31,7 +31,7 @@ function handleFileUpload($fieldName){
             $destinationFolder = 'uploads/documents/';
         }
 
-        // Create the destination folder if it doesn't exist
+        //  destination folder if it doesn't exist
         if (!file_exists($destinationFolder)) {
             mkdir($destinationFolder, 0755, true);
         }
